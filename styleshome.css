@@ -1,56 +1,63 @@
-* {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
+    * {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
 
+    .header {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 150px;
+    }
 
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+    .logoHome {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
 
-.logoHome {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50%;
-    margin: 30px;
-}
+    .imglogo {
+        max-width: 100%;
+        height: auto;
+    }
 
-.imglogo {
-    max-width: 100%;
-    height: auto;
-}
+    .navHome {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: #031af5ff;
+        height: 50px;
+    }
 
-.navHome {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 25px;
-    background-color: #031af5ff;
-}
+    .listaNavHome {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        gap: 10px;
+    }
 
-.listaNavHome {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-    gap: 10px;
-}
-.listaNavHome li button {
-    border: none; 
-    color: white;
-    padding: 8px 16px; 
-    font-size: 16px; 
-    cursor: pointer; 
-    background-color: #031af5ff;
-}
+    .listaNavHome li a {
+        border: none;
+        color: white;
+        padding: 8px 16px;
+        font-size: 18px;
+        cursor: pointer;
+        background-color: #031af5ff;
+    }
 
-.listaNavHome li {
-    margin: 0;
-}
+    .listaNavHome li {
+        margin: 0;
+    }
 
+    a {
+        text-decoration: none;
+        color: inherit;
+    }

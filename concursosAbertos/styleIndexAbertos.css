@@ -1,0 +1,108 @@
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainHome {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: antiquewhite;
+    padding: 10px;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.mainLeft {
+    display: flex;    
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 55vw;
+    border: 1px solid #0000001c;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px #0000002f;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.mainLeft a {
+    flex: 1 1 calc(33% - 20px); /* 3 items per row with 10px gap */
+    text-decoration: none;
+}
+
+.mainLeft article {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    min-height: 100px; /* Initial height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.mainLeft article div {
+    margin-bottom: 10px;
+    height: 60px;
+}
+
+.mainRight {
+    width: 100%;
+    height: 600px;
+    max-width: 30vw;
+    border: 1px solid #0000001c;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px #0000002f;
+    margin-top: 10px;
+}
+
+.mainRightbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemListMainRightBox {
+    height: 80px;
+    display: flex;
+    margin: 10px;
+    padding: 15px;
+}
+
+.imglistright {
+    margin-right: 25px;
+}
+
+.footer {
+    border: 1px solid rgba(0, 0, 0, 0.096);
+    height: 200px;
+    background-color: aquamarine;
+    padding: 20px;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .mainLeft {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainLeft a {
+        flex: 1 1 100%; /* Full width items on small screens */
+    }
+
+    .mainRight {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
