@@ -1,63 +1,74 @@
-    * {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-    }
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
 
-    .header {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 150px;
-    }
+.header {
 
-    .logoHome {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 250px;
+}
 
-    .imglogo {
-        max-width: 100%;
-        height: auto;
-    }
+.logoHome {
+  height: 200px;
+  width: 100%;
+  background-color: rgb(237, 213, 213);
+}
 
-    .navHome {
-        position: absolute;
-        bottom: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        background-color: #031af5ff;
-        height: 50px;
-    }
+.imglogo {
+    position: absolute; /* Position relative to its parent */
+    top: 10%; /* Vertical center from top */
+    left: 50%; /* Horizontal center from left */
+    transform: translate(-50%, -50%); 
+    max-width: 150px;
+}
 
-    .listaNavHome {
-        display: flex;
-        padding: 0;
-        margin: 0;
-        gap: 10px;
-    }
+.textlogo {
+    position: absolute; /* Position relative to its parent */
+    top: 21%; /* Vertical center from top */
+    left: 50%; /* Horizontal center from left */
+    transform: translate(-50%, -50%); 
+    max-width: 250px;
+    font-size: 25px;
+    font-weight: bold;
+}
 
-    .listaNavHome li a {
-        border: none;
-        color: white;
-        padding: 8px 16px;
-        font-size: 18px;
-        cursor: pointer;
-        background-color: #031af5ff;
-    }
+.navHome {
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #031af5ff;
+  height: 50px;
+}
 
-    .listaNavHome li {
-        margin: 0;
-    }
+.listaNavHome {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
 
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
+.listaNavHome li a {
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #031af5ff;
+}
+
+.listaNavHome li {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
